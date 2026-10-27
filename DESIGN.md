@@ -8,27 +8,27 @@ Bookmark: [Inkwright announcement by @tinkerersanky](https://x.com/tinkerersanky
 
 Follow-on safety posts from the same thread (mirrored in public mirrors): AI off until a parent turns it on; on-device classifiers; every AI reply moderated; adversarial prompt battery.
 
-This project is a **Boyd-household, local TokenMax build** shaped by that product idea — not a clone of Inkwright’s code or brand assets. We borrow the *studio + stories + multi-domain + parent-gated AI* shape and ground it in Char (~13) and Vic (~11).
+This project is a **family, local TokenMax build** shaped by that product idea — not a clone of Inkwright’s code or brand assets. We borrow the *studio + stories + multi-domain + parent-gated AI* shape and ground it in Kid A and Kid B.
 
 ## Who it is for
 
 | Person | Role in product |
 |---|---|
-| Charlotte | Primary story / music / branch builder |
-| Victor | Primary robot-sim / comic / pixel-art builder |
-| Boyd & Miranda | Parent overview, AI gate, session glance |
+| Kid A | Primary story / music / branch builder |
+| Kid B | Primary robot-sim / comic / pixel-art builder |
+| parents | Parent overview, AI gate, session glance |
 
 ## Who it is *not*
 
-- **Not Char Tutor / Vic Tutor.** Those bots help with schoolwork, grades, and homework loops. This app never opens PowerSchool, never assigns worksheets, never grades essays. It is a *creative studio*.
+- **Not Kid A Tutor / Kid B Tutor.** Those bots help with schoolwork, grades, and homework loops. This app never opens PowerSchool, never assigns worksheets, never grades essays. It is a *creative studio*.
 - **Not an open chatbot.** Kids arrange blocks and craft prompts locally. There is no stranger chat and no outbound model call unless a parent later wires one (default: off).
 - **Not a full Scratch/Blockly port.** Sequence lanes + typed block cards keep the build shippable on stdlib while still feeling like a studio floor, not a gradebook.
 
 ## Design principles
 
 1. **Stories are the vehicle.** Domains (logic, art, music, robotics, AI craft) show up as blocks inside a narrative — Resnick’s Projects / Passion / Play, not drills.
-2. **Two shelves, one house.** Char and Vic never share a project list. Parent overview reads both.
-3. **Low floor, honest ceiling.** Vic can finish a three-panel comic; Char can add music cues and a third branch.
+2. **Two shelves, one house.** Kid A and Kid B never share a project list. Parent overview reads both.
+3. **Low floor, honest ceiling.** Kid B can finish a three-panel comic; Kid A can add music cues and a third branch.
 4. **Safety is a product surface.** Ask-a-Parent is one click away. Personal-data patterns fail closed. AI helper defaults off. Portable controls from Agent Brief Forge **brief-006** (craft≠companion; filters are layer-0; on-device before cloud) live in SAFETY.md + Parent overview — not legal advice.
 5. **Warm studio, not purple neon SaaS.** Cream paper (`#fff8ef`), coral accent (`#e4572e`), teal secondary (`#2a9d8f`), Nunito, colored block chips, dashed lane tape, Play Story readout.
 
@@ -36,7 +36,7 @@ This project is a **Boyd-household, local TokenMax build** shaped by that produc
 
 ```
 Home → Kid shelf → Studio (tray | lanes | inspector)
-     → Briefs library → start project for Char or Vic
+     → Briefs library → start project for Kid A or Kid B
      → Parent overview → AI toggle + per-kid glance
 ```
 
@@ -61,8 +61,8 @@ This is deliberately closer to interactive-fiction beats than to a free-canvas B
 
 ## Demo projects (preloaded)
 
-1. **Char — Starlight Door** (`char-starlight`): two-door adventure with a chime on the silver path and a riddle on the oak path.
-2. **Vic — Pixel Pet Fetch** (`vic-robot-pet`): hungry pet → eat → fetch ball → happy dance on a room grid.
+1. **Kid A — Starlight Door** (`kida-starlight`): two-door adventure with a chime on the silver path and a riddle on the oak path.
+2. **Kid B — Pixel Pet Fetch** (`kidb-robot-pet`): hungry pet → eat → fetch ball → happy dance on a room grid.
 
 ## Success for a session
 

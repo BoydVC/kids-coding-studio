@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Kids Coding Studio — local creative studio for Char & Vic on 127.0.0.1:4331.
+"""Kids Coding Studio — local creative studio for Kid A & Kid B on 127.0.0.1:4331.
 
 Python stdlib only. Serves a single-page studio, JSON APIs for briefs/profiles/
 projects, and persists kid shelves under data/state.json. No external network
@@ -48,7 +48,7 @@ ASK_PARENT_TRIGGERS = [
     for p in [
         r"\bask (a |my )?parent\b",
         r"\bi need (a )?grown-?up\b",
-        r"\bhelp from (mom|dad|parent|miranda|boyd)\b",
+        r"\bhelp from (mom|dad|parent)\b",
     ]
 ]
 

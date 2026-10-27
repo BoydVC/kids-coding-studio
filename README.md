@@ -1,14 +1,14 @@
 # Kids Coding Studio
 
-Inkwright-shaped creative coding studio for **Charlotte Boyd (~13, 8th)** and **Victor Boyd (~11, 6th)**. They learn logic, AI prompt craft, robotics sims, music, and art by building their own stories with blocks — **not** a homework tutor clone (Char Tutor / Vic Tutor stay separate).
+Inkwright-shaped creative coding studio for **Kid A** and **Kid B**. They learn logic, AI prompt craft, robotics sims, music, and art by building their own stories with blocks — **not** a homework tutor clone (Kid A Tutor / Kid B Tutor stay separate).
 
 Inspired by [@tinkerersanky on Inkwright](https://x.com/tinkerersanky/status/2114621309070262406): *a coding studio where 9–13 year olds learn logic, AI, robotics, music and art by building their own stories with blocks.*
 
-## 2-minute how-to (Boyd)
+## 2-minute how-to (parent)
 
 1. From this folder: `./run.sh`
 2. Open **http://127.0.0.1:4331/** in a browser on the box / tunnel you use.
-3. Pick **Char** or **Vic** → open the preloaded demo (`Starlight Door` / `Pixel Pet Fetch`) or hit **Briefs**.
+3. Pick **Kid A** or **Kid B** → open the preloaded demo (`Starlight Door` / `Pixel Pet Fetch`) or hit **Briefs**.
 4. In the studio: click chips in the **Block tray**, drag between Setup / Path A / Path B / Wrap, edit lines in the inspector, **Play Story**, then **Save**.
 5. Open **Parent** for both kids’ active project, last session, and suggested next. AI helper stays **off** until you enable it there.
 
@@ -21,12 +21,12 @@ Stop: `./run.sh stop`
 | Piece | Detail |
 |---|---|
 | Port | `127.0.0.1:4331` |
-| Profiles | Char + Vic, separate shelves |
+| Profiles | Kid A + Kid B, separate shelves |
 | Briefs | 10 starters (logic, story, art, music, robotics, AI) |
 | Builder | Structured cards + sequence lanes (studio feel, not a spreadsheet) |
 | Parent page | `#/parent` overview |
 | Safety | Local filters, no external chat, Ask-a-Parent escape — see `SAFETY.md` |
-| Demos | `char-starlight`, `vic-robot-pet` preloaded |
+| Demos | `kida-starlight`, `kidb-robot-pet` preloaded |
 
 ## Layout
 
@@ -46,7 +46,7 @@ kids-coding-studio/
 
 - `GET /healthz` — liveness
 - `GET /api/state` — full state
-- `GET /api/briefs` · `/api/parent/overview` · `/api/kids/{char|vic}/projects`
+- `GET /api/briefs` · `/api/parent/overview` · `/api/kids/{kida|kidb}/projects`
 - `POST /api/safety/check` · `/api/projects/save` · `/api/projects/new` · `/api/session/touch` · `/api/parent/ai-toggle`
 
 ## Notes

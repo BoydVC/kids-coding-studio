@@ -14,7 +14,7 @@ const App = (() => {
 
   let state = null;
   let route = "home";
-  let kid = null; // 'char' | 'vic'
+  let kid = null; // 'kida' | 'kidb'
   let projectId = null;
   let selectedBlockId = null;
 
@@ -124,7 +124,7 @@ const App = (() => {
       <section class="hero">
         <div class="card">
           <h1>Build stories. Learn by making.</h1>
-          <p class="muted">An Inkwright-shaped coding studio for Charlotte (~13) and Victor (~11).
+          <p class="muted">An Inkwright-shaped coding studio for Kid A and Kid B.
           Snap blocks into lanes to tell stories that teach logic, art, music, robots, and kind AI prompts —
           not a homework tutor.</p>
           <div class="safety-banner">Age-safe mode on · no external chat · AI helper off until a parent enables it · Ask a Parent anytime</div>
@@ -142,8 +142,8 @@ const App = (() => {
         </div>
       </section>
       <div class="kid-grid">
-        ${kidCard("char")}
-        ${kidCard("vic")}
+        ${kidCard("kida")}
+        ${kidCard("kidb")}
       </div>
     `;
   }
@@ -212,8 +212,8 @@ const App = (() => {
             <h3>${b.title}</h3>
             <p class="muted" style="flex:1">${b.tagline}</p>
             <div class="pill-row">
-              <button onclick="event.stopPropagation();App.startBrief('char','${b.id}')">Char</button>
-              <button onclick="event.stopPropagation();App.startBrief('vic','${b.id}')">Vic</button>
+              <button onclick="event.stopPropagation();App.startBrief('kida','${b.id}')">Kid A</button>
+              <button onclick="event.stopPropagation();App.startBrief('kidb','${b.id}')">Kid B</button>
               <button class="ghost" onclick="event.stopPropagation();App.showBrief('${b.id}')">Details</button>
             </div>
           </article>`).join("")}
@@ -357,7 +357,7 @@ const App = (() => {
   }
 
   function viewParent() {
-    const kids = ["char", "vic"].map((id) => {
+    const kids = ["kida", "kidb"].map((id) => {
       const p = profile(id);
       const shelf = projectsFor(id);
       const active = state.projects[p.active_project_id] || shelf[0];
@@ -365,7 +365,7 @@ const App = (() => {
       const ls = p.last_session || {};
       return `
         <article class="card">
-          <span class="badge-soft" style="background:${id === "char" ? "rgba(228,87,46,.12)" : "rgba(42,157,143,.14)"};color:${id === "char" ? "#b33c16" : "#1b6f64"}">${p.short_name}</span>
+          <span class="badge-soft" style="background:${id === "kida" ? "rgba(228,87,46,.12)" : "rgba(42,157,143,.14)"};color:${id === "kida" ? "#b33c16" : "#1b6f64"}">${p.short_name}</span>
           <h2>${p.display_name} · ${p.grade}</h2>
           <p><b>Working on:</b> ${active ? esc(active.title) : "—"} (${active ? active.status : ""})</p>
           <p><b>Last session:</b> ${fmtWhen(ls.at)} · ${ls.minutes || 0} min</p>
@@ -388,7 +388,7 @@ const App = (() => {
       <div class="section-title">
         <div>
           <h2>Parent overview</h2>
-          <p class="muted">For Boyd &amp; Miranda · what each kid is building, last session, suggested next. Separate from Char Tutor / Vic Tutor.</p>
+          <p class="muted">For parents · what each kid is building, last session, suggested next. Separate from Kid A Tutor / Kid B Tutor.</p>
         </div>
       </div>
       <div class="card" style="margin-bottom:1rem">

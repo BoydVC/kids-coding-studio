@@ -5,8 +5,8 @@
   --ink: #1e1b2e;
   --muted: #6b6680;
   --line: #eadfce;
-  --char: #e4572e;
-  --vic: #2a9d8f;
+  --kida: #e4572e;
+  --kidb: #2a9d8f;
   --accent: #e4572e;
   --accent-2: #2a9d8f;
   --warn: #b45309;
@@ -223,9 +223,9 @@ button.danger { border-color: var(--danger); color: var(--danger); }
 
 .kid-card:hover { transform: translateY(-2px); border-color: var(--accent-2); }
 
-.kid-card.char { border-color: color-mix(in oklab, var(--char), white 35%); }
+.kid-card.kida { border-color: color-mix(in oklab, var(--kida), white 35%); }
 
-.kid-card.vic { border-color: color-mix(in oklab, var(--vic), white 25%); }
+.kid-card.kidb { border-color: color-mix(in oklab, var(--kidb), white 25%); }
 
 .kid-card .badge {
   display: inline-flex;
@@ -237,12 +237,12 @@ button.danger { border-color: var(--danger); color: var(--danger); }
   font-weight: 700;
 }
 
-.kid-card.char .badge {
+.kid-card.kida .badge {
   background: rgba(228, 87, 46, 0.12);
   color: #b33c16;
 }
 
-.kid-card.vic .badge {
+.kid-card.kidb .badge {
   background: rgba(42, 157, 143, 0.14);
   color: #1b6f64;
 }

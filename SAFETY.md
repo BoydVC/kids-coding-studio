@@ -1,6 +1,6 @@
 # SAFETY.md — Kids Coding Studio
 
-Age band: **~9–13** (Char ~13, Vic ~11). Local-only app on `127.0.0.1`.
+Age band: **~9–13** (Kid A ~13, Kid B ~11). Local-only app on `127.0.0.1`.
 
 **Source fold:** Agent Brief Forge **brief-006** (*Age-Safe Kids Coding / AI Helper Defaults*, 2026-10-26) + `peer-review-006.json`.  
 **Disclaimer:** Practical household / engineering controls for this local studio. **Not legal advice.** Not a COPPA, Children's Code, or UNICEF certification. Citations below are design-awareness only.
@@ -21,9 +21,9 @@ Age band: **~9–13** (Char ~13, Vic ~11). Local-only app on `127.0.0.1`.
 4. **AI helper defaults OFF.** Only the Parent page can enable it. Disable is one click and clears helper session state.
 5. **Ask a Parent is always visible.** It explains the boundary and invites a grown-up — it does not phone home.
 6. **Fail closed on save.** Server re-checks SAY / ASK_AI text; blocked patterns refuse the save.
-7. **No homework surveillance.** This is not Char Tutor / Vic Tutor. We do not pull grades or read school accounts.
+7. **No homework surveillance.** This is not Kid A Tutor / Kid B Tutor. We do not pull grades or read school accounts.
 8. **Minimize data.** State is local JSON: first names, project graphs, session notes. No geolocation, no ad trackers, no third-party scripts. Prefer coarse block reason codes over logging raw PII probes.
-9. **Parent-readable.** Overview shows what each kid is building so Boyd/Miranda can coach without scrolling a chat log.
+9. **Parent-readable.** Overview shows what each kid is building so a parent can coach without scrolling a chat log.
 
 ## Social-engineering filter notes (brief-006 §4)
 
@@ -106,7 +106,7 @@ Full citation set: `/workspace/tokenmax/agent-brief-forge/out/brief-006.md` and 
 - Kid stuck emotionally or confused → **Ask a Parent** button; human takes over.
 - Parent wants AI off → Parent page → **Disable AI helper** (clears helper session state).
 - Bad text saved somehow → edit/remove the block and Save again; patterns are re-checked.
-- Suspected unsafe remix idea → stop, talk to Boyd/Miranda; do not paste personal facts into blocks.
+- Suspected unsafe remix idea → stop, talk to a parent; do not paste personal facts into blocks.
 - Do **not** paste incident text into a public model to “analyze.”
 - Encode repeat misses as smoke fixtures (architecture → tests), not aspirational docs alone.
 

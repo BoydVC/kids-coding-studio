@@ -1,12 +1,12 @@
 # RESEARCH.md — Kids Coding Studio
 
-Public references that shaped the Boyd household Kids Coding Studio (Inkwright-shaped, ages ~9–13). Compiled Mon Oct 26, 2026 (America/New_York). All links are public; this file is not legal advice.
+Public references that shaped the family Kids Coding Studio (Inkwright-shaped, ages ~9–13). Compiled Mon Oct 26, 2026 (America/New_York). All links are public; this file is not legal advice.
 
 ## 1. Why this product exists
 
-Boyd bookmarked [@tinkerersanky’s Inkwright post](https://x.com/tinkerersanky/status/2114621309070262406): a coding studio where **9–13 year olds learn logic, AI, robotics, music and art by building their own stories with blocks**. Mirror summaries of the same thread emphasize parent-gated AI, on-device classifiers, and adversarial prompt testing before a child sees model output.
+A parent bookmarked [@tinkerersanky’s Inkwright post](https://x.com/tinkerersanky/status/2114621309070262406): a coding studio where **9–13 year olds learn logic, AI, robotics, music and art by building their own stories with blocks**. Mirror summaries of the same thread emphasize parent-gated AI, on-device classifiers, and adversarial prompt testing before a child sees model output.
 
-Jim · Interests (burn-night snapshot Oct 20–26) ranked a **kids coding studio bot** as one of three ambitious TokenMax builds for Char (~13) and Vic (~11), distinct from tutor bots.
+Jim · Interests (burn-night snapshot Oct 20–26) ranked a **kids coding studio bot** as one of three ambitious TokenMax builds for Kid A and Kid B, distinct from tutor bots.
 
 This research desk answers three design questions:
 
@@ -25,7 +25,7 @@ Yu, Yu, and Li (2025), *Effects of Block-Based Visual Programming on K-12 Studen
 - Effects larger for **junior high**, **novices**, tools like **Scratch / ScratchJr / Alice / App Inventor**, and **project-based / game-based** pedagogies.
 - Link: https://journals.sagepub.com/doi/10.1177/07356331241293163
 
-Implication for us: Char (8th) and Vic (6th) sit in the band where BVP shows stronger effects, especially when the unit of work is a *project*, not a worksheet.
+Implication for us: Kid A (8th) and Kid B (6th) sit in the band where BVP shows stronger effects, especially when the unit of work is a *project*, not a worksheet.
 
 ### 2.2 Scratch + game design in middle school
 
@@ -55,7 +55,7 @@ Secondary-school PBL + Scratch (Journal of Systems and Software, 2025) with 52 s
 ### 2.3 Takeaway for Kids Coding Studio
 
 - Prefer **project briefs with checklists** over open void.
-- Keep a **low floor** (Vic’s three-panel comic) and a **honest ceiling** (Char’s branched + scored story).
+- Keep a **low floor** (Kid B’s three-panel comic) and a **honest ceiling** (Kid A’s branched + scored story).
 - Treat debugging as social/parent-visible (“Play Story” readout), not a hidden stack trace.
 
 ## 3. Story-driven coding
@@ -156,7 +156,7 @@ Therefore Kids Coding Studio:
 
 - Should Play Story gain a tiny on-canvas stage (sprites) or stay textual for parent skim?
 - When/if a local model is wired, reuse the same safety_check and keep cloud off by default.
-- Multiplayer remix between Char and Vic (Peers) without creating an internet community.
+- Multiplayer remix between Kid A and Kid B (Peers) without creating an internet community.
 
 ## 8. Citation list (compact)
 
@@ -181,4 +181,4 @@ Therefore Kids Coding Studio:
 
 ## 9. Bottom line
 
-Block-based, story-first studios are on solid empirical ground for Char and Vic’s ages. Safety for kid AI is mostly about **defaults, minimization, disclosure, and parent agency** — not about bolting a chatbot onto a worksheet. Kids Coding Studio ships as a local studio that respects that research and stays out of the tutor-bots’ lane.
+Block-based, story-first studios are on solid empirical ground for Kid A and Kid B’s ages. Safety for kid AI is mostly about **defaults, minimization, disclosure, and parent agency** — not about bolting a chatbot onto a worksheet. Kids Coding Studio ships as a local studio that respects that research and stays out of the tutor-bots’ lane.

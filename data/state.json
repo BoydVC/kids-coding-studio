@@ -5,36 +5,36 @@
   "safety_mode": "strict",
   "ai_helper_enabled": false,
   "profiles": {
-    "char": {
-      "id": "char",
-      "display_name": "Charlotte",
-      "short_name": "Char",
+    "kida": {
+      "id": "kida",
+      "display_name": "Kid A",
+      "short_name": "Kid A",
       "age": 13,
       "grade": "8th",
       "accent": "#e4572e",
       "bio": "Loves stories, music cues, and clever branches. Studio coach — not homework tutor.",
-      "active_project_id": "char-starlight",
+      "active_project_id": "kida-starlight",
       "suggested_next": "music-beat-story",
       "last_session": {
         "at": "2026-10-26T18:40:00-04:00",
-        "project_id": "char-starlight",
+        "project_id": "kida-starlight",
         "minutes": 22,
         "note": "Finished the moon-door branch; started a music cue on the reveal."
       }
     },
-    "vic": {
-      "id": "vic",
-      "display_name": "Victor",
-      "short_name": "Vic",
+    "kidb": {
+      "id": "kidb",
+      "display_name": "Kid B",
+      "short_name": "Kid B",
       "age": 11,
       "grade": "6th",
       "accent": "#22c55e",
       "bio": "Loves robots, pixel art, and short comic jokes. Studio coach — not homework tutor.",
-      "active_project_id": "vic-robot-pet",
+      "active_project_id": "kidb-robot-pet",
       "suggested_next": "art-pixel-weather",
       "last_session": {
         "at": "2026-10-26T17:15:00-04:00",
-        "project_id": "vic-robot-pet",
+        "project_id": "kidb-robot-pet",
         "minutes": 18,
         "note": "Got the pet to fetch when hungry; still tweaking the happy dance."
       }
@@ -61,7 +61,7 @@
         "Key count increases only when a key is found",
         "Story ends with a clear victory line"
       ],
-      "parent_blurb": "Practices loops, conditions, and state (key count) without typing syntax. Good warm-up for Char; stretch for Vic with help on the stop rule."
+      "parent_blurb": "Practices loops, conditions, and state (key count) without typing syntax. Good warm-up for Kid A; stretch for Kid B with help on the stop rule."
     },
     "story-branch-door": {
       "id": "story-branch-door",
@@ -83,7 +83,7 @@
         "Choice is labeled clearly for a reader",
         "No path asks for personal info"
       ],
-      "parent_blurb": "Classic interactive fiction. Strengthens sequencing and audience awareness. Vic's demo starts here; Char can add a third door later."
+      "parent_blurb": "Classic interactive fiction. Strengthens sequencing and audience awareness. Kid B's demo starts here; Kid A can add a third door later."
     },
     "art-pixel-weather": {
       "id": "art-pixel-weather",
@@ -105,7 +105,7 @@
         "Palette is consistent within each look",
         "Toggle works without restarting the app"
       ],
-      "parent_blurb": "Combines visual design with conditionals. Low text load — friendly for Vic; Char can invent a third weather."
+      "parent_blurb": "Combines visual design with conditionals. Low text load — friendly for Kid B; Kid A can invent a third weather."
     },
     "music-beat-story": {
       "id": "music-beat-story",
@@ -127,7 +127,7 @@
         "At least two SAY lines align with beats",
         "Music stops on END"
       ],
-      "parent_blurb": "Introduces timing and events. Good for Char (music + narrative); Vic can stick to one tempo."
+      "parent_blurb": "Introduces timing and events. Good for Kid A (music + narrative); Kid B can stick to one tempo."
     },
     "robot-shelf-helper": {
       "id": "robot-shelf-helper",
@@ -171,7 +171,7 @@
         "No real names, schools, or addresses appear",
         "Kid can explain what the AI helper did vs what they decided"
       ],
-      "parent_blurb": "AI literacy without open chat. Local rule checks only — no external model calls. Better fit for Char; Vic with a parent beside them."
+      "parent_blurb": "AI literacy without open chat. Local rule checks only — no external model calls. Better fit for Kid A; Kid B with a parent beside them."
     },
     "logic-secret-code": {
       "id": "logic-secret-code",
@@ -193,7 +193,7 @@
         "Spaces and punctuation stay readable",
         "Kid can explain the shift in plain words"
       ],
-      "parent_blurb": "Concrete intro to algorithms and reversibility. Strong for Char; Vic can use shift=1 with a short word."
+      "parent_blurb": "Concrete intro to algorithms and reversibility. Strong for Kid A; Kid B can use shift=1 with a short word."
     },
     "story-comic-three": {
       "id": "story-comic-three",
@@ -215,7 +215,7 @@
         "Twist changes something visual",
         "Remix still plays start → middle → end"
       ],
-      "parent_blurb": "Short-form narrative + sequencing. Ideal first project for Vic; Char can add a fourth 'epilogue' panel later."
+      "parent_blurb": "Short-form narrative + sequencing. Ideal first project for Kid B; Kid A can add a fourth 'epilogue' panel later."
     },
     "art-music-festival": {
       "id": "art-music-festival",
@@ -259,13 +259,13 @@
         "Rover never steps outside the grid",
         "Replay is deterministic"
       ],
-      "parent_blurb": "Spatial reasoning + safety bounds. Great for Vic; Char can add a third plant and optimize steps."
+      "parent_blurb": "Spatial reasoning + safety bounds. Great for Kid B; Kid A can add a third plant and optimize steps."
     }
   },
   "projects": {
-    "char-starlight": {
-      "id": "char-starlight",
-      "owner": "char",
+    "kida-starlight": {
+      "id": "kida-starlight",
+      "owner": "kida",
       "brief_id": "story-branch-door",
       "title": "Starlight Door",
       "status": "in_progress",
@@ -401,9 +401,9 @@
         ]
       }
     },
-    "char-empty-music": {
-      "id": "char-empty-music",
-      "owner": "char",
+    "kida-empty-music": {
+      "id": "kida-empty-music",
+      "owner": "kida",
       "brief_id": "music-beat-story",
       "title": "March of the Fireflies (draft)",
       "status": "idea",
@@ -419,9 +419,9 @@
         "wrap": []
       }
     },
-    "vic-robot-pet": {
-      "id": "vic-robot-pet",
-      "owner": "vic",
+    "kidb-robot-pet": {
+      "id": "kidb-robot-pet",
+      "owner": "kidb",
       "brief_id": "robot-shelf-helper",
       "title": "Pixel Pet Fetch",
       "status": "in_progress",
@@ -565,9 +565,9 @@
         ]
       }
     },
-    "vic-comic-draft": {
-      "id": "vic-comic-draft",
-      "owner": "vic",
+    "kidb-comic-draft": {
+      "id": "kidb-comic-draft",
+      "owner": "kidb",
       "brief_id": "story-comic-three",
       "title": "Sandwich Heist (3 panels)",
       "status": "idea",

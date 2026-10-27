@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Kids Coding Studio — Char & Vic creative studio on 127.0.0.1:4331
+# Kids Coding Studio — Kid A & Kid B creative studio on 127.0.0.1:4331
 #   ./run.sh          start (idempotent)
 #   ./run.sh stop     stop
 #   ./run.sh status   status

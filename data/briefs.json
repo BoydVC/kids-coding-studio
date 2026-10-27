@@ -19,7 +19,7 @@
       "Key count increases only when a key is found",
       "Story ends with a clear victory line"
     ],
-    "parent_blurb": "Practices loops, conditions, and state (key count) without typing syntax. Good warm-up for Char; stretch for Vic with help on the stop rule."
+    "parent_blurb": "Practices loops, conditions, and state (key count) without typing syntax. Good warm-up for Kid A; stretch for Kid B with help on the stop rule."
   },
   {
     "id": "story-branch-door",
@@ -41,7 +41,7 @@
       "Choice is labeled clearly for a reader",
       "No path asks for personal info"
     ],
-    "parent_blurb": "Classic interactive fiction. Strengthens sequencing and audience awareness. Vic's demo starts here; Char can add a third door later."
+    "parent_blurb": "Classic interactive fiction. Strengthens sequencing and audience awareness. Kid B's demo starts here; Kid A can add a third door later."
   },
   {
     "id": "art-pixel-weather",
@@ -63,7 +63,7 @@
       "Palette is consistent within each look",
       "Toggle works without restarting the app"
     ],
-    "parent_blurb": "Combines visual design with conditionals. Low text load \u2014 friendly for Vic; Char can invent a third weather."
+    "parent_blurb": "Combines visual design with conditionals. Low text load \u2014 friendly for Kid B; Kid A can invent a third weather."
   },
   {
     "id": "music-beat-story",
@@ -85,7 +85,7 @@
       "At least two SAY lines align with beats",
       "Music stops on END"
     ],
-    "parent_blurb": "Introduces timing and events. Good for Char (music + narrative); Vic can stick to one tempo."
+    "parent_blurb": "Introduces timing and events. Good for Kid A (music + narrative); Kid B can stick to one tempo."
   },
   {
     "id": "robot-shelf-helper",
@@ -129,7 +129,7 @@
       "No real names, schools, or addresses appear",
       "Kid can explain what the AI helper did vs what they decided"
     ],
-    "parent_blurb": "AI literacy without open chat. Local rule checks only \u2014 no external model calls. Better fit for Char; Vic with a parent beside them."
+    "parent_blurb": "AI literacy without open chat. Local rule checks only \u2014 no external model calls. Better fit for Kid A; Kid B with a parent beside them."
   },
   {
     "id": "logic-secret-code",
@@ -151,7 +151,7 @@
       "Spaces and punctuation stay readable",
       "Kid can explain the shift in plain words"
     ],
-    "parent_blurb": "Concrete intro to algorithms and reversibility. Strong for Char; Vic can use shift=1 with a short word."
+    "parent_blurb": "Concrete intro to algorithms and reversibility. Strong for Kid A; Kid B can use shift=1 with a short word."
   },
   {
     "id": "story-comic-three",
@@ -173,7 +173,7 @@
       "Twist changes something visual",
       "Remix still plays start \u2192 middle \u2192 end"
     ],
-    "parent_blurb": "Short-form narrative + sequencing. Ideal first project for Vic; Char can add a fourth 'epilogue' panel later."
+    "parent_blurb": "Short-form narrative + sequencing. Ideal first project for Kid B; Kid A can add a fourth 'epilogue' panel later."
   },
   {
     "id": "art-music-festival",
@@ -217,6 +217,6 @@
       "Rover never steps outside the grid",
       "Replay is deterministic"
     ],
-    "parent_blurb": "Spatial reasoning + safety bounds. Great for Vic; Char can add a third plant and optimize steps."
+    "parent_blurb": "Spatial reasoning + safety bounds. Great for Kid B; Kid A can add a third plant and optimize steps."
   }
 ]

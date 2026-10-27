@@ -1,34 +1,34 @@
 {
-  "char": {
-    "id": "char",
-    "display_name": "Charlotte",
-    "short_name": "Char",
+  "kida": {
+    "id": "kida",
+    "display_name": "Kid A",
+    "short_name": "Kid A",
     "age": 13,
     "grade": "8th",
     "accent": "#e4572e",
     "bio": "Loves stories, music cues, and clever branches. Studio coach \u2014 not homework tutor.",
-    "active_project_id": "char-starlight",
+    "active_project_id": "kida-starlight",
     "suggested_next": "music-beat-story",
     "last_session": {
       "at": "2026-10-26T18:40:00-04:00",
-      "project_id": "char-starlight",
+      "project_id": "kida-starlight",
       "minutes": 22,
       "note": "Finished the moon-door branch; started a music cue on the reveal."
     }
   },
-  "vic": {
-    "id": "vic",
-    "display_name": "Victor",
-    "short_name": "Vic",
+  "kidb": {
+    "id": "kidb",
+    "display_name": "Kid B",
+    "short_name": "Kid B",
     "age": 11,
     "grade": "6th",
     "accent": "#22c55e",
     "bio": "Loves robots, pixel art, and short comic jokes. Studio coach \u2014 not homework tutor.",
-    "active_project_id": "vic-robot-pet",
+    "active_project_id": "kidb-robot-pet",
     "suggested_next": "art-pixel-weather",
     "last_session": {
       "at": "2026-10-26T17:15:00-04:00",
-      "project_id": "vic-robot-pet",
+      "project_id": "kidb-robot-pet",
       "minutes": 18,
       "note": "Got the pet to fetch when hungry; still tweaking the happy dance."
     }
