@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kids Coding Studio · Char & Vic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap" rel="stylesheet" />
+  <style>/*__CSS__*/</style>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button type="button" class="brand" onclick="App.go('home')" aria-label="Kids Coding Studio home">
+        <span class="logo" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="8" height="8" rx="2" fill="currentColor"/>
+            <rect x="13" y="3" width="8" height="8" rx="2" fill="currentColor" opacity="0.7"/>
+            <rect x="3" y="13" width="8" height="8" rx="2" fill="currentColor" opacity="0.7"/>
+            <path d="M14 16.5h6M17 13.5v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <div>
+          <strong>Kids Coding Studio</strong>
+          <small>Stories · Logic · Art · Music · Robots · AI craft</small>
+        </div>
+      </button>
+      <nav class="nav">
+        <button type="button" data-route="home">Home</button>
+        <button type="button" data-route="briefs">Briefs</button>
+        <button type="button" data-route="parent" class="parent-btn">Parent</button>
+        <button type="button" class="ask-parent" onclick="App.askParent()">Ask a Parent</button>
+      </nav>
+    </header>
+    <main id="view"></main>
+    <div id="toast" hidden></div>
+    <dialog id="parent-gate">
+      <form method="dialog" class="gate-card">
+        <h2>Ask a Parent</h2>
+        <p>This studio never chats with strangers and never asks for personal facts. A parent can help with anything sticky.</p>
+        <p class="muted">Tip for Char &amp; Vic: describe the story idea you want — not your real name, school, or address.</p>
+        <menu>
+          <button value="ok" class="primary">Got it</button>
+        </menu>
+      </form>
+    </dialog>
+  </div>
+  <script>/*__APP__*/</script>
+</body>
+</html>

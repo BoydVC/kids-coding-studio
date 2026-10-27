@@ -1,0 +1,138 @@
+{
+  "id": "char-starlight",
+  "owner": "char",
+  "brief_id": "story-branch-door",
+  "title": "Starlight Door",
+  "status": "in_progress",
+  "domain": "story",
+  "created": "2026-10-24T16:00:00-04:00",
+  "updated": "2026-10-26T18:40:00-04:00",
+  "checklist": {
+    "Two distinct endings exist": true,
+    "Choice is labeled clearly for a reader": true,
+    "No path asks for personal info": true
+  },
+  "blocks": [
+    {
+      "id": "b1",
+      "type": "WHEN",
+      "label": "Story starts",
+      "args": {
+        "event": "start"
+      }
+    },
+    {
+      "id": "b2",
+      "type": "SHOW",
+      "label": "Moonlit hallway",
+      "args": {
+        "scene": "hallway-moon",
+        "palette": "cool-night"
+      }
+    },
+    {
+      "id": "b3",
+      "type": "SAY",
+      "label": "Narrator",
+      "args": {
+        "text": "Two doors glow. One hums. One whispers."
+      }
+    },
+    {
+      "id": "b4",
+      "type": "CHOICE",
+      "label": "Pick a door",
+      "args": {
+        "options": [
+          "Humming silver door",
+          "Whispering oak door"
+        ]
+      }
+    },
+    {
+      "id": "b5",
+      "type": "IF",
+      "label": "If silver door",
+      "args": {
+        "condition": "choice == silver"
+      }
+    },
+    {
+      "id": "b6",
+      "type": "PLAY",
+      "label": "Soft chime",
+      "args": {
+        "sound": "chime",
+        "tempo": "chill"
+      }
+    },
+    {
+      "id": "b7",
+      "type": "SAY",
+      "label": "Friend",
+      "args": {
+        "text": "A star-map unfurls. Your friend already marked the safe path."
+      }
+    },
+    {
+      "id": "b8",
+      "type": "SHOW",
+      "label": "Star map ending",
+      "args": {
+        "scene": "star-map"
+      }
+    },
+    {
+      "id": "b9",
+      "type": "IF",
+      "label": "If oak door",
+      "args": {
+        "condition": "choice == oak"
+      }
+    },
+    {
+      "id": "b10",
+      "type": "SAY",
+      "label": "Riddle",
+      "args": {
+        "text": "The door asks: what gets wetter the more it dries?"
+      }
+    },
+    {
+      "id": "b11",
+      "type": "SHOW",
+      "label": "Library ending",
+      "args": {
+        "scene": "cozy-library"
+      }
+    },
+    {
+      "id": "b12",
+      "type": "END",
+      "label": "The end",
+      "args": {}
+    }
+  ],
+  "lanes": {
+    "setup": [
+      "b1",
+      "b2",
+      "b3",
+      "b4"
+    ],
+    "path_a": [
+      "b5",
+      "b6",
+      "b7",
+      "b8"
+    ],
+    "path_b": [
+      "b9",
+      "b10",
+      "b11"
+    ],
+    "wrap": [
+      "b12"
+    ]
+  }
+}

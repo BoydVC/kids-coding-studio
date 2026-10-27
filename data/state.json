@@ -1,0 +1,641 @@
+{
+  "version": 1,
+  "app": "kids-coding-studio",
+  "port": 4331,
+  "safety_mode": "strict",
+  "ai_helper_enabled": false,
+  "profiles": {
+    "char": {
+      "id": "char",
+      "display_name": "Charlotte",
+      "short_name": "Char",
+      "age": 13,
+      "grade": "8th",
+      "accent": "#e4572e",
+      "bio": "Loves stories, music cues, and clever branches. Studio coach — not homework tutor.",
+      "active_project_id": "char-starlight",
+      "suggested_next": "music-beat-story",
+      "last_session": {
+        "at": "2026-10-26T18:40:00-04:00",
+        "project_id": "char-starlight",
+        "minutes": 22,
+        "note": "Finished the moon-door branch; started a music cue on the reveal."
+      }
+    },
+    "vic": {
+      "id": "vic",
+      "display_name": "Victor",
+      "short_name": "Vic",
+      "age": 11,
+      "grade": "6th",
+      "accent": "#22c55e",
+      "bio": "Loves robots, pixel art, and short comic jokes. Studio coach — not homework tutor.",
+      "active_project_id": "vic-robot-pet",
+      "suggested_next": "art-pixel-weather",
+      "last_session": {
+        "at": "2026-10-26T17:15:00-04:00",
+        "project_id": "vic-robot-pet",
+        "minutes": 18,
+        "note": "Got the pet to fetch when hungry; still tweaking the happy dance."
+      }
+    }
+  },
+  "briefs": {
+    "logic-maze-keys": {
+      "id": "logic-maze-keys",
+      "title": "Maze Key Loop",
+      "domain": "logic",
+      "age_band": "10-13",
+      "minutes": 25,
+      "emoji": "🧩",
+      "tagline": "Teach a hero to pick up keys with a loop and a stop rule.",
+      "steps": [
+        "Name your hero and the maze world.",
+        "Add a WHEN: story starts block.",
+        "Add a REPEAT until keys = 3 loop.",
+        "Inside the loop: MOVE forward, IF wall then TURN left, IF key then PICK UP.",
+        "After the loop: SAY 'Gate open!' and SHOW victory scene."
+      ],
+      "success": [
+        "Loop runs more than once",
+        "Key count increases only when a key is found",
+        "Story ends with a clear victory line"
+      ],
+      "parent_blurb": "Practices loops, conditions, and state (key count) without typing syntax. Good warm-up for Char; stretch for Vic with help on the stop rule."
+    },
+    "story-branch-door": {
+      "id": "story-branch-door",
+      "title": "Two-Door Adventure",
+      "domain": "story",
+      "age_band": "9-13",
+      "minutes": 30,
+      "emoji": "📖",
+      "tagline": "Build a branching story where a choice changes the ending.",
+      "steps": [
+        "Write a short opening scene (2–3 sentences).",
+        "Add a CHOICE block with Door A and Door B.",
+        "For Door A: calm ending with a friend.",
+        "For Door B: puzzle ending with a riddle.",
+        "Add one SAY line that only appears on the path the kid chose."
+      ],
+      "success": [
+        "Two distinct endings exist",
+        "Choice is labeled clearly for a reader",
+        "No path asks for personal info"
+      ],
+      "parent_blurb": "Classic interactive fiction. Strengthens sequencing and audience awareness. Vic's demo starts here; Char can add a third door later."
+    },
+    "art-pixel-weather": {
+      "id": "art-pixel-weather",
+      "title": "Pixel Weather Painter",
+      "domain": "art",
+      "age_band": "9-12",
+      "minutes": 20,
+      "emoji": "🎨",
+      "tagline": "Paint a sky that changes with IF sunny / IF stormy blocks.",
+      "steps": [
+        "Pick a palette (warm day or cool night).",
+        "SHOW base sky scene.",
+        "Add IF weather = sunny → SHOW sun + birds.",
+        "Add IF weather = stormy → SHOW clouds + lightning flash.",
+        "Hook weather to a CHOICE so the kid can flip the scene."
+      ],
+      "success": [
+        "At least two weather looks",
+        "Palette is consistent within each look",
+        "Toggle works without restarting the app"
+      ],
+      "parent_blurb": "Combines visual design with conditionals. Low text load — friendly for Vic; Char can invent a third weather."
+    },
+    "music-beat-story": {
+      "id": "music-beat-story",
+      "title": "Beat + Story Sync",
+      "domain": "music",
+      "age_band": "10-13",
+      "minutes": 25,
+      "emoji": "🎵",
+      "tagline": "Layer a 4-beat loop under a short spoken story beat.",
+      "steps": [
+        "Choose tempo: chill / march / bounce.",
+        "PLAY a 4-beat drum loop.",
+        "Add SAY lines timed to beat 1 and beat 3.",
+        "On beat 4: SHOW a scene change.",
+        "Stop music cleanly when the story ends."
+      ],
+      "success": [
+        "Music starts before dialogue",
+        "At least two SAY lines align with beats",
+        "Music stops on END"
+      ],
+      "parent_blurb": "Introduces timing and events. Good for Char (music + narrative); Vic can stick to one tempo."
+    },
+    "robot-shelf-helper": {
+      "id": "robot-shelf-helper",
+      "title": "Shelf Helper Bot",
+      "domain": "robotics",
+      "age_band": "10-13",
+      "minutes": 30,
+      "emoji": "🤖",
+      "tagline": "Simulate a bot that sorts books onto three shelves.",
+      "steps": [
+        "Define shelves: Top / Middle / Bottom.",
+        "WHEN book arrives → READ label color.",
+        "IF red → MOVE to Top; IF blue → Middle; ELSE → Bottom.",
+        "SAY a short confirmation each time.",
+        "Run three books through and check the shelf map."
+      ],
+      "success": [
+        "Three different books land on correct shelves",
+        "Else-path handles an unexpected color",
+        "Parent can see the shelf map on overview"
+      ],
+      "parent_blurb": "Simple robotics/sim logic: sense → decide → act. Mirrors real sorting tasks without hardware."
+    },
+    "ai-prompt-coach": {
+      "id": "ai-prompt-coach",
+      "title": "Kind Prompt Craft",
+      "domain": "ai",
+      "age_band": "11-13",
+      "minutes": 20,
+      "emoji": "✨",
+      "tagline": "Write safe story prompts that ask an AI helper for scene ideas — never personal facts.",
+      "steps": [
+        "Read the Age-Safe Prompt Rules card.",
+        "Draft a prompt that asks for a fantasy setting only.",
+        "Run the local safety check (blocked words / personal asks).",
+        "Accept one scene idea into a SHOW block.",
+        "Save the prompt recipe for remixing later."
+      ],
+      "success": [
+        "Prompt passes the local safety check",
+        "No real names, schools, or addresses appear",
+        "Kid can explain what the AI helper did vs what they decided"
+      ],
+      "parent_blurb": "AI literacy without open chat. Local rule checks only — no external model calls. Better fit for Char; Vic with a parent beside them."
+    },
+    "logic-secret-code": {
+      "id": "logic-secret-code",
+      "title": "Secret Code Machine",
+      "domain": "logic",
+      "age_band": "11-13",
+      "minutes": 25,
+      "emoji": "🔐",
+      "tagline": "Encode a message by shifting letters, then decode it back.",
+      "steps": [
+        "Pick a shift number (1–5).",
+        "WHEN encode pressed → transform each letter.",
+        "SHOW the coded message in a comic panel.",
+        "WHEN decode pressed → reverse the shift.",
+        "Verify the decoded text matches the original."
+      ],
+      "success": [
+        "Encode and decode are inverses",
+        "Spaces and punctuation stay readable",
+        "Kid can explain the shift in plain words"
+      ],
+      "parent_blurb": "Concrete intro to algorithms and reversibility. Strong for Char; Vic can use shift=1 with a short word."
+    },
+    "story-comic-three": {
+      "id": "story-comic-three",
+      "title": "Three-Panel Comic Code",
+      "domain": "story",
+      "age_band": "9-12",
+      "minutes": 20,
+      "emoji": "🗯️",
+      "tagline": "Tell a joke or mini-myth in exactly three panels controlled by blocks.",
+      "steps": [
+        "Panel 1: SETUP — SHOW scene + SAY setup line.",
+        "Panel 2: TWIST — IF surprise then SHOW new prop.",
+        "Panel 3: PUNCH — SAY ending + PLAY sting sound.",
+        "Press Play Story to run panels in order.",
+        "Remix: swap the twist without breaking the order."
+      ],
+      "success": [
+        "Exactly three panels run in order",
+        "Twist changes something visual",
+        "Remix still plays start → middle → end"
+      ],
+      "parent_blurb": "Short-form narrative + sequencing. Ideal first project for Vic; Char can add a fourth 'epilogue' panel later."
+    },
+    "art-music-festival": {
+      "id": "art-music-festival",
+      "title": "Backyard Festival Poster",
+      "domain": "art",
+      "age_band": "10-13",
+      "minutes": 30,
+      "emoji": "🎪",
+      "tagline": "Design a festival poster that reacts when music starts.",
+      "steps": [
+        "SHOW poster base (title + stage).",
+        "Add art layers: lights, crowd silhouettes, banner.",
+        "WHEN PLAY music → lights pulse (SHOW flash).",
+        "Add one CHOICE: day fest vs night fest palettes.",
+        "Export a parent-share blurb describing the design."
+      ],
+      "success": [
+        "Poster has title + at least two layers",
+        "Music trigger changes a visual",
+        "Day/night palettes both look intentional"
+      ],
+      "parent_blurb": "Crosses art and events. Fun showcase piece for the parent overview shelf."
+    },
+    "robot-garden-path": {
+      "id": "robot-garden-path",
+      "title": "Garden Path Rover",
+      "domain": "robotics",
+      "age_band": "9-12",
+      "minutes": 25,
+      "emoji": "🌱",
+      "tagline": "Program a rover to water plants along a path without leaving the garden.",
+      "steps": [
+        "Draw a 3×3 garden grid with two plants.",
+        "MOVE rover to plant A, WATER, then plant B.",
+        "IF edge detected → TURN instead of leaving grid.",
+        "SAY status after each water.",
+        "Replay path twice — same route each time."
+      ],
+      "success": [
+        "Both plants get watered",
+        "Rover never steps outside the grid",
+        "Replay is deterministic"
+      ],
+      "parent_blurb": "Spatial reasoning + safety bounds. Great for Vic; Char can add a third plant and optimize steps."
+    }
+  },
+  "projects": {
+    "char-starlight": {
+      "id": "char-starlight",
+      "owner": "char",
+      "brief_id": "story-branch-door",
+      "title": "Starlight Door",
+      "status": "in_progress",
+      "domain": "story",
+      "created": "2026-10-24T16:00:00-04:00",
+      "updated": "2026-10-26T18:40:00-04:00",
+      "checklist": {
+        "Two distinct endings exist": true,
+        "Choice is labeled clearly for a reader": true,
+        "No path asks for personal info": true
+      },
+      "blocks": [
+        {
+          "id": "b1",
+          "type": "WHEN",
+          "label": "Story starts",
+          "args": {
+            "event": "start"
+          }
+        },
+        {
+          "id": "b2",
+          "type": "SHOW",
+          "label": "Moonlit hallway",
+          "args": {
+            "scene": "hallway-moon",
+            "palette": "cool-night"
+          }
+        },
+        {
+          "id": "b3",
+          "type": "SAY",
+          "label": "Narrator",
+          "args": {
+            "text": "Two doors glow. One hums. One whispers."
+          }
+        },
+        {
+          "id": "b4",
+          "type": "CHOICE",
+          "label": "Pick a door",
+          "args": {
+            "options": [
+              "Humming silver door",
+              "Whispering oak door"
+            ]
+          }
+        },
+        {
+          "id": "b5",
+          "type": "IF",
+          "label": "If silver door",
+          "args": {
+            "condition": "choice == silver"
+          }
+        },
+        {
+          "id": "b6",
+          "type": "PLAY",
+          "label": "Soft chime",
+          "args": {
+            "sound": "chime",
+            "tempo": "chill"
+          }
+        },
+        {
+          "id": "b7",
+          "type": "SAY",
+          "label": "Friend",
+          "args": {
+            "text": "A star-map unfurls. Your friend already marked the safe path."
+          }
+        },
+        {
+          "id": "b8",
+          "type": "SHOW",
+          "label": "Star map ending",
+          "args": {
+            "scene": "star-map"
+          }
+        },
+        {
+          "id": "b9",
+          "type": "IF",
+          "label": "If oak door",
+          "args": {
+            "condition": "choice == oak"
+          }
+        },
+        {
+          "id": "b10",
+          "type": "SAY",
+          "label": "Riddle",
+          "args": {
+            "text": "The door asks: what gets wetter the more it dries?"
+          }
+        },
+        {
+          "id": "b11",
+          "type": "SHOW",
+          "label": "Library ending",
+          "args": {
+            "scene": "cozy-library"
+          }
+        },
+        {
+          "id": "b12",
+          "type": "END",
+          "label": "The end",
+          "args": {}
+        }
+      ],
+      "lanes": {
+        "setup": [
+          "b1",
+          "b2",
+          "b3",
+          "b4"
+        ],
+        "path_a": [
+          "b5",
+          "b6",
+          "b7",
+          "b8"
+        ],
+        "path_b": [
+          "b9",
+          "b10",
+          "b11"
+        ],
+        "wrap": [
+          "b12"
+        ]
+      }
+    },
+    "char-empty-music": {
+      "id": "char-empty-music",
+      "owner": "char",
+      "brief_id": "music-beat-story",
+      "title": "March of the Fireflies (draft)",
+      "status": "idea",
+      "domain": "music",
+      "created": "2026-10-26T19:00:00-04:00",
+      "updated": "2026-10-26T19:00:00-04:00",
+      "checklist": {},
+      "blocks": [],
+      "lanes": {
+        "setup": [],
+        "path_a": [],
+        "path_b": [],
+        "wrap": []
+      }
+    },
+    "vic-robot-pet": {
+      "id": "vic-robot-pet",
+      "owner": "vic",
+      "brief_id": "robot-shelf-helper",
+      "title": "Pixel Pet Fetch",
+      "status": "in_progress",
+      "domain": "robotics",
+      "created": "2026-10-23T15:30:00-04:00",
+      "updated": "2026-10-26T17:15:00-04:00",
+      "checklist": {
+        "Three different books land on correct shelves": false,
+        "Else-path handles an unexpected color": true,
+        "Parent can see the shelf map on overview": true
+      },
+      "blocks": [
+        {
+          "id": "v1",
+          "type": "WHEN",
+          "label": "Pet wakes up",
+          "args": {
+            "event": "start"
+          }
+        },
+        {
+          "id": "v2",
+          "type": "SHOW",
+          "label": "Living room grid",
+          "args": {
+            "scene": "room-3x3",
+            "palette": "warm-day"
+          }
+        },
+        {
+          "id": "v3",
+          "type": "SAY",
+          "label": "Pet",
+          "args": {
+            "text": "Beep! Hungry for a pixel biscuit."
+          }
+        },
+        {
+          "id": "v4",
+          "type": "IF",
+          "label": "If hungry",
+          "args": {
+            "condition": "hunger > 0"
+          }
+        },
+        {
+          "id": "v5",
+          "type": "MOVE",
+          "label": "Walk to bowl",
+          "args": {
+            "dir": "forward",
+            "steps": 2
+          }
+        },
+        {
+          "id": "v6",
+          "type": "DO",
+          "label": "Eat biscuit",
+          "args": {
+            "action": "eat"
+          }
+        },
+        {
+          "id": "v7",
+          "type": "PLAY",
+          "label": "Happy chirp",
+          "args": {
+            "sound": "chirp",
+            "tempo": "bounce"
+          }
+        },
+        {
+          "id": "v8",
+          "type": "SAY",
+          "label": "Pet",
+          "args": {
+            "text": "Yum. Ready to fetch!"
+          }
+        },
+        {
+          "id": "v9",
+          "type": "WHEN",
+          "label": "Ball tossed",
+          "args": {
+            "event": "ball"
+          }
+        },
+        {
+          "id": "v10",
+          "type": "MOVE",
+          "label": "Chase ball",
+          "args": {
+            "dir": "forward",
+            "steps": 3
+          }
+        },
+        {
+          "id": "v11",
+          "type": "DO",
+          "label": "Bring ball back",
+          "args": {
+            "action": "fetch"
+          }
+        },
+        {
+          "id": "v12",
+          "type": "SHOW",
+          "label": "Happy dance",
+          "args": {
+            "scene": "dance"
+          }
+        },
+        {
+          "id": "v13",
+          "type": "END",
+          "label": "Nap time",
+          "args": {}
+        }
+      ],
+      "lanes": {
+        "setup": [
+          "v1",
+          "v2",
+          "v3"
+        ],
+        "path_a": [
+          "v4",
+          "v5",
+          "v6",
+          "v7",
+          "v8"
+        ],
+        "path_b": [
+          "v9",
+          "v10",
+          "v11",
+          "v12"
+        ],
+        "wrap": [
+          "v13"
+        ]
+      }
+    },
+    "vic-comic-draft": {
+      "id": "vic-comic-draft",
+      "owner": "vic",
+      "brief_id": "story-comic-three",
+      "title": "Sandwich Heist (3 panels)",
+      "status": "idea",
+      "domain": "story",
+      "created": "2026-10-25T14:00:00-04:00",
+      "updated": "2026-10-25T14:00:00-04:00",
+      "checklist": {},
+      "blocks": [],
+      "lanes": {
+        "setup": [],
+        "path_a": [],
+        "path_b": [],
+        "wrap": []
+      }
+    }
+  },
+  "block_palette": [
+    {
+      "type": "WHEN",
+      "color": "#f59e0b",
+      "hint": "Something happens"
+    },
+    {
+      "type": "DO",
+      "color": "#3b82f6",
+      "hint": "Do an action"
+    },
+    {
+      "type": "IF",
+      "color": "#a855f7",
+      "hint": "Only if true"
+    },
+    {
+      "type": "CHOICE",
+      "color": "#ec4899",
+      "hint": "Reader picks a path"
+    },
+    {
+      "type": "SAY",
+      "color": "#14b8a6",
+      "hint": "Speak a line"
+    },
+    {
+      "type": "SHOW",
+      "color": "#f97316",
+      "hint": "Show a scene or art"
+    },
+    {
+      "type": "PLAY",
+      "color": "#eab308",
+      "hint": "Play a sound or beat"
+    },
+    {
+      "type": "MOVE",
+      "color": "#22c55e",
+      "hint": "Move in the sim"
+    },
+    {
+      "type": "ASK_AI",
+      "color": "#6366f1",
+      "hint": "Ask for a safe scene idea"
+    },
+    {
+      "type": "END",
+      "color": "#64748b",
+      "hint": "Finish the story"
+    }
+  ],
+  "helper_mode": "off",
+  "helper_session": null
+}

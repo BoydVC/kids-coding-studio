@@ -1,0 +1,222 @@
+[
+  {
+    "id": "logic-maze-keys",
+    "title": "Maze Key Loop",
+    "domain": "logic",
+    "age_band": "10-13",
+    "minutes": 25,
+    "emoji": "\ud83e\udde9",
+    "tagline": "Teach a hero to pick up keys with a loop and a stop rule.",
+    "steps": [
+      "Name your hero and the maze world.",
+      "Add a WHEN: story starts block.",
+      "Add a REPEAT until keys = 3 loop.",
+      "Inside the loop: MOVE forward, IF wall then TURN left, IF key then PICK UP.",
+      "After the loop: SAY 'Gate open!' and SHOW victory scene."
+    ],
+    "success": [
+      "Loop runs more than once",
+      "Key count increases only when a key is found",
+      "Story ends with a clear victory line"
+    ],
+    "parent_blurb": "Practices loops, conditions, and state (key count) without typing syntax. Good warm-up for Char; stretch for Vic with help on the stop rule."
+  },
+  {
+    "id": "story-branch-door",
+    "title": "Two-Door Adventure",
+    "domain": "story",
+    "age_band": "9-13",
+    "minutes": 30,
+    "emoji": "\ud83d\udcd6",
+    "tagline": "Build a branching story where a choice changes the ending.",
+    "steps": [
+      "Write a short opening scene (2\u20133 sentences).",
+      "Add a CHOICE block with Door A and Door B.",
+      "For Door A: calm ending with a friend.",
+      "For Door B: puzzle ending with a riddle.",
+      "Add one SAY line that only appears on the path the kid chose."
+    ],
+    "success": [
+      "Two distinct endings exist",
+      "Choice is labeled clearly for a reader",
+      "No path asks for personal info"
+    ],
+    "parent_blurb": "Classic interactive fiction. Strengthens sequencing and audience awareness. Vic's demo starts here; Char can add a third door later."
+  },
+  {
+    "id": "art-pixel-weather",
+    "title": "Pixel Weather Painter",
+    "domain": "art",
+    "age_band": "9-12",
+    "minutes": 20,
+    "emoji": "\ud83c\udfa8",
+    "tagline": "Paint a sky that changes with IF sunny / IF stormy blocks.",
+    "steps": [
+      "Pick a palette (warm day or cool night).",
+      "SHOW base sky scene.",
+      "Add IF weather = sunny \u2192 SHOW sun + birds.",
+      "Add IF weather = stormy \u2192 SHOW clouds + lightning flash.",
+      "Hook weather to a CHOICE so the kid can flip the scene."
+    ],
+    "success": [
+      "At least two weather looks",
+      "Palette is consistent within each look",
+      "Toggle works without restarting the app"
+    ],
+    "parent_blurb": "Combines visual design with conditionals. Low text load \u2014 friendly for Vic; Char can invent a third weather."
+  },
+  {
+    "id": "music-beat-story",
+    "title": "Beat + Story Sync",
+    "domain": "music",
+    "age_band": "10-13",
+    "minutes": 25,
+    "emoji": "\ud83c\udfb5",
+    "tagline": "Layer a 4-beat loop under a short spoken story beat.",
+    "steps": [
+      "Choose tempo: chill / march / bounce.",
+      "PLAY a 4-beat drum loop.",
+      "Add SAY lines timed to beat 1 and beat 3.",
+      "On beat 4: SHOW a scene change.",
+      "Stop music cleanly when the story ends."
+    ],
+    "success": [
+      "Music starts before dialogue",
+      "At least two SAY lines align with beats",
+      "Music stops on END"
+    ],
+    "parent_blurb": "Introduces timing and events. Good for Char (music + narrative); Vic can stick to one tempo."
+  },
+  {
+    "id": "robot-shelf-helper",
+    "title": "Shelf Helper Bot",
+    "domain": "robotics",
+    "age_band": "10-13",
+    "minutes": 30,
+    "emoji": "\ud83e\udd16",
+    "tagline": "Simulate a bot that sorts books onto three shelves.",
+    "steps": [
+      "Define shelves: Top / Middle / Bottom.",
+      "WHEN book arrives \u2192 READ label color.",
+      "IF red \u2192 MOVE to Top; IF blue \u2192 Middle; ELSE \u2192 Bottom.",
+      "SAY a short confirmation each time.",
+      "Run three books through and check the shelf map."
+    ],
+    "success": [
+      "Three different books land on correct shelves",
+      "Else-path handles an unexpected color",
+      "Parent can see the shelf map on overview"
+    ],
+    "parent_blurb": "Simple robotics/sim logic: sense \u2192 decide \u2192 act. Mirrors real sorting tasks without hardware."
+  },
+  {
+    "id": "ai-prompt-coach",
+    "title": "Kind Prompt Craft",
+    "domain": "ai",
+    "age_band": "11-13",
+    "minutes": 20,
+    "emoji": "\u2728",
+    "tagline": "Write safe story prompts that ask an AI helper for scene ideas \u2014 never personal facts.",
+    "steps": [
+      "Read the Age-Safe Prompt Rules card.",
+      "Draft a prompt that asks for a fantasy setting only.",
+      "Run the local safety check (blocked words / personal asks).",
+      "Accept one scene idea into a SHOW block.",
+      "Save the prompt recipe for remixing later."
+    ],
+    "success": [
+      "Prompt passes the local safety check",
+      "No real names, schools, or addresses appear",
+      "Kid can explain what the AI helper did vs what they decided"
+    ],
+    "parent_blurb": "AI literacy without open chat. Local rule checks only \u2014 no external model calls. Better fit for Char; Vic with a parent beside them."
+  },
+  {
+    "id": "logic-secret-code",
+    "title": "Secret Code Machine",
+    "domain": "logic",
+    "age_band": "11-13",
+    "minutes": 25,
+    "emoji": "\ud83d\udd10",
+    "tagline": "Encode a message by shifting letters, then decode it back.",
+    "steps": [
+      "Pick a shift number (1\u20135).",
+      "WHEN encode pressed \u2192 transform each letter.",
+      "SHOW the coded message in a comic panel.",
+      "WHEN decode pressed \u2192 reverse the shift.",
+      "Verify the decoded text matches the original."
+    ],
+    "success": [
+      "Encode and decode are inverses",
+      "Spaces and punctuation stay readable",
+      "Kid can explain the shift in plain words"
+    ],
+    "parent_blurb": "Concrete intro to algorithms and reversibility. Strong for Char; Vic can use shift=1 with a short word."
+  },
+  {
+    "id": "story-comic-three",
+    "title": "Three-Panel Comic Code",
+    "domain": "story",
+    "age_band": "9-12",
+    "minutes": 20,
+    "emoji": "\ud83d\uddef\ufe0f",
+    "tagline": "Tell a joke or mini-myth in exactly three panels controlled by blocks.",
+    "steps": [
+      "Panel 1: SETUP \u2014 SHOW scene + SAY setup line.",
+      "Panel 2: TWIST \u2014 IF surprise then SHOW new prop.",
+      "Panel 3: PUNCH \u2014 SAY ending + PLAY sting sound.",
+      "Press Play Story to run panels in order.",
+      "Remix: swap the twist without breaking the order."
+    ],
+    "success": [
+      "Exactly three panels run in order",
+      "Twist changes something visual",
+      "Remix still plays start \u2192 middle \u2192 end"
+    ],
+    "parent_blurb": "Short-form narrative + sequencing. Ideal first project for Vic; Char can add a fourth 'epilogue' panel later."
+  },
+  {
+    "id": "art-music-festival",
+    "title": "Backyard Festival Poster",
+    "domain": "art",
+    "age_band": "10-13",
+    "minutes": 30,
+    "emoji": "\ud83c\udfaa",
+    "tagline": "Design a festival poster that reacts when music starts.",
+    "steps": [
+      "SHOW poster base (title + stage).",
+      "Add art layers: lights, crowd silhouettes, banner.",
+      "WHEN PLAY music \u2192 lights pulse (SHOW flash).",
+      "Add one CHOICE: day fest vs night fest palettes.",
+      "Export a parent-share blurb describing the design."
+    ],
+    "success": [
+      "Poster has title + at least two layers",
+      "Music trigger changes a visual",
+      "Day/night palettes both look intentional"
+    ],
+    "parent_blurb": "Crosses art and events. Fun showcase piece for the parent overview shelf."
+  },
+  {
+    "id": "robot-garden-path",
+    "title": "Garden Path Rover",
+    "domain": "robotics",
+    "age_band": "9-12",
+    "minutes": 25,
+    "emoji": "\ud83c\udf31",
+    "tagline": "Program a rover to water plants along a path without leaving the garden.",
+    "steps": [
+      "Draw a 3\u00d73 garden grid with two plants.",
+      "MOVE rover to plant A, WATER, then plant B.",
+      "IF edge detected \u2192 TURN instead of leaving grid.",
+      "SAY status after each water.",
+      "Replay path twice \u2014 same route each time."
+    ],
+    "success": [
+      "Both plants get watered",
+      "Rover never steps outside the grid",
+      "Replay is deterministic"
+    ],
+    "parent_blurb": "Spatial reasoning + safety bounds. Great for Vic; Char can add a third plant and optimize steps."
+  }
+]

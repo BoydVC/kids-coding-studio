@@ -1,0 +1,146 @@
+{
+  "id": "vic-robot-pet",
+  "owner": "vic",
+  "brief_id": "robot-shelf-helper",
+  "title": "Pixel Pet Fetch",
+  "status": "in_progress",
+  "domain": "robotics",
+  "created": "2026-10-23T15:30:00-04:00",
+  "updated": "2026-10-26T17:15:00-04:00",
+  "checklist": {
+    "Three different books land on correct shelves": false,
+    "Else-path handles an unexpected color": true,
+    "Parent can see the shelf map on overview": true
+  },
+  "blocks": [
+    {
+      "id": "v1",
+      "type": "WHEN",
+      "label": "Pet wakes up",
+      "args": {
+        "event": "start"
+      }
+    },
+    {
+      "id": "v2",
+      "type": "SHOW",
+      "label": "Living room grid",
+      "args": {
+        "scene": "room-3x3",
+        "palette": "warm-day"
+      }
+    },
+    {
+      "id": "v3",
+      "type": "SAY",
+      "label": "Pet",
+      "args": {
+        "text": "Beep! Hungry for a pixel biscuit."
+      }
+    },
+    {
+      "id": "v4",
+      "type": "IF",
+      "label": "If hungry",
+      "args": {
+        "condition": "hunger > 0"
+      }
+    },
+    {
+      "id": "v5",
+      "type": "MOVE",
+      "label": "Walk to bowl",
+      "args": {
+        "dir": "forward",
+        "steps": 2
+      }
+    },
+    {
+      "id": "v6",
+      "type": "DO",
+      "label": "Eat biscuit",
+      "args": {
+        "action": "eat"
+      }
+    },
+    {
+      "id": "v7",
+      "type": "PLAY",
+      "label": "Happy chirp",
+      "args": {
+        "sound": "chirp",
+        "tempo": "bounce"
+      }
+    },
+    {
+      "id": "v8",
+      "type": "SAY",
+      "label": "Pet",
+      "args": {
+        "text": "Yum. Ready to fetch!"
+      }
+    },
+    {
+      "id": "v9",
+      "type": "WHEN",
+      "label": "Ball tossed",
+      "args": {
+        "event": "ball"
+      }
+    },
+    {
+      "id": "v10",
+      "type": "MOVE",
+      "label": "Chase ball",
+      "args": {
+        "dir": "forward",
+        "steps": 3
+      }
+    },
+    {
+      "id": "v11",
+      "type": "DO",
+      "label": "Bring ball back",
+      "args": {
+        "action": "fetch"
+      }
+    },
+    {
+      "id": "v12",
+      "type": "SHOW",
+      "label": "Happy dance",
+      "args": {
+        "scene": "dance"
+      }
+    },
+    {
+      "id": "v13",
+      "type": "END",
+      "label": "Nap time",
+      "args": {}
+    }
+  ],
+  "lanes": {
+    "setup": [
+      "v1",
+      "v2",
+      "v3"
+    ],
+    "path_a": [
+      "v4",
+      "v5",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    "path_b": [
+      "v9",
+      "v10",
+      "v11",
+      "v12"
+    ],
+    "wrap": [
+      "v13"
+    ]
+  }
+}
